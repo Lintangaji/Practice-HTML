@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter</title>
+</head>
+
+<body>
+    <h1>Ini adalah penjelasan tentang tag meter</h1>
+    <p>
+        Tag <code>&lt;meter&gt;</code> mendefinisikan pengukuran skalar dalam rentang yang diketahui, atau nilai
+        pecahan. Ini juga
+        dikenal sebagai pengukur.
+        <br>
+        Contoh: Penggunaan disk, relevansi hasil kueri, dll.
+        <br>
+        Catatan: Tag <code>&lt;meter&gt;</code> tidak boleh digunakan untuk menunjukkan progres (seperti pada bilah
+        progres). Untuk
+        progress bar, gunakan tag <code>&lt;progress&gt;</code>.
+        <br>
+        tip: Selalu tambahkan tag <code>&lt;label&gt;</code> untuk praktik aksesibilitas terbaik!
+        <br><br>
+        Contoh pengguna tag <code>&lt;meter&gt;</code> :
+    </p>
+    <pre>
+        <code>
+            &lt;label for=&quot;disk_c&quot;&gt;Disk usage C:&lt;/label&gt;
+            &lt;meter id=&quot;disk_c&quot; value=&quot;2&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;2 out of 10&lt;/meter&gt;&lt;br&gt;
+            &lt;label for=&quot;disk_d&quot;&gt;Disk usage D:&lt;/label&gt;
+            &lt;meter id=&quot;disk_d&quot; value=&quot;0.6&quot;&gt;60%&lt;/meter&gt;
+        </code>
+    </pre>
+    <br>
+    <h2>Attribut yang bisa di gunakan di tag meter namun tag meter pun mendukung global dan Attribut event</h2>
+    <p>
+        form - form_id : Specifies which form the <code>&lt;meter&gt;</code> element belongs to
+        <br>
+        high - number : Specifies the range that is considered to be a high value
+        <br>
+        low - number : Specifies the range that is considered to be a low value
+        <br>
+        max - number : Specifies the maximum value of the range
+        <br>
+        min - number : Specifies the minimum value of the range. Default value is 0
+        <br>
+        optimum - number : Specifies what value is the optimal value for the gauge
+        <br>
+        value - number : Required. Specifies the current value of the gauge
+    </p>
+
+</body>
+
+</html>
