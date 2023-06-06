@@ -89,6 +89,43 @@
     <!-- tag i tidak merbuah makna apaun dalam teks yang di bungkus di dalam tag i tag i hanya di gunakan untuk membuat text
     terlihat miring secara visual -->
 
+    <p>untuk melakukan copy pada text silahkan tekan pada keyboard <kbd>Ctrl</kbd>+<kbd>C</kbd></p>
+    <!-- tag kbd merupakan tag yang berfungsi untuk memberitahu user semisal web memiliki fungsi
+    shortcut yang harus di tekan -->
+
+    <p>text ini akan di <mark>tandai</mark> menggunakan tag mark</p>
+    <!-- tag mark berfugsi untuk menandai sebuah text seperti menggunakan marker -->
+
+    <label for="disk_C">Disk C : </label>
+    <meter id="disk_C" value="2" min="0" max="10">2 of 10</meter>
+    <br>
+    <label for="disk_D">Disk D : </label>
+    <meter value="0.6%">60%</meter>
+    <!-- tag meter berfungsi untuk menunjukan sebuah visual contoh semisal disk yang telah di gunakan -->
+
+    <pre>
+        <code>
+            constructor() {
+                this._getPosition();
+              }
+          _getPosition() {
+              if (navigator.geolocation) {
+                      navigator.geolocation.getCurrentPosition(
+                          this._loadMap.bind(this)
+                      ,() => {
+                          alert("could not get your position")
+                      })
+                      }
+              }
+        </code>
+    </pre>
+    <!-- Ketika teks dikelilingi oleh tag <pre>, teks tersebut akan ditampilkan dalam font monospace dengan spasi yang 
+        dipertahankan. Ini berarti semua karakter, termasuk spasi dan baris baru, 
+        akan ditampilkan persis sesuai dengan yang ada dalam kode HTML.  -->
+
+    <label for="proggres">Download : </label>
+    <progress id="proggres" value="30" max="100"></progress>
+
 </body>
 
 </html>
