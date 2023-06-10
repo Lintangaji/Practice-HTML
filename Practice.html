@@ -231,15 +231,51 @@
         <br><br>
         <label for="buah">pilih buah kesukaan kamu :</label>
         <select name="" id="">
-            <optgroup label="buah_kering">
+            <optgroup label="buah kering">
                 <option value="sawo">sawo</option>
                 <option value="mangga">mangga</option>
             </optgroup>
-            <optgroup label="buah_basah">
+            <optgroup label="buah basah">
                 <option value="buah_naga">buah naga</option>
                 <option value="kedongdong">kedongdong</option>
             </optgroup>
         </select>
+        <br><br>
+        <form action="">
+            <fieldset>
+                <legend>aku sayang kamu</legend>
+                <label for="fname">First Name :</label>
+                <input type="text" name="fname" id="fname" placeholder="Fill first name">
+                <br><br>
+                <label for="lname">Last Name :</label>
+                <input type="text" name="lname" id="lname" placeholder="Fill last name">
+                <br><br>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Fill email">
+                <br><br>
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" placeholder="Fill password">
+                <br><br>
+                <label for="birthday">Birthday :</label>
+                <input type="date" name="birthday" id="birthday">
+                <br><br>
+                <button>Send!</button>
+            </fieldset>
+        </form>
+        <br><br><br>
+
+        <form action="" method="get">
+            <label for="browser">Browser :</label>
+            <input list="browsers" name="browser" id="browser">
+
+            <datalist id="browsers">
+                <option value="edge"></option>
+                <option value="firefox"></option>
+                <option value="chrome"></option>
+            </datalist>
+        </form>
+
+
 </body>
 
 </html>
